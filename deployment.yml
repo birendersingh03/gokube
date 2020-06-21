@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ""
+        image: "magalixcorp/k8scicd:54"
         resources:
           requests:
             cpu: 10m

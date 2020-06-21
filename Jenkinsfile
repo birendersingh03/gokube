@@ -13,7 +13,7 @@ pipeline {
 	       sh 'pwd'
 		sh 'whoami'
                sh 'cd /tmp'
-               sh 'kubectl apply -f dep.yml'
+               sh 'runuser -l root -c 'kubectl apply -f dep.yml''
 
            }
        }

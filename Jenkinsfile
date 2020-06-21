@@ -13,7 +13,7 @@ pipeline {
 	       sh 'pwd'
 		sh 'whoami'
 	       sh 'echo $PATH'
-               sh '/usr/local/bin/kubectl apply -f dep.yml'
+               sh '/usr/local/bin/kubectl get nodes'
 
            }
        }

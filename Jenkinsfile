@@ -11,7 +11,7 @@ pipeline {
            steps {
                // Create our project directory.
 	       sh 'pwd'
-               sh 'cd ${GOPATH}/Kube'
+               sh 'cd ${GOCACHE}/Kube'
                sh 'kubectl apply -f dep.yml'
 
            }

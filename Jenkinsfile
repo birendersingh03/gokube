@@ -1,4 +1,8 @@
 pipeline {
+  parameters {
+    password (name: 'AWS_ACCESS_KEY_ID')
+    password (name: 'AWS_SECRET_ACCESS_KEY')
+  }
    agent any
    environment {
        registry = "magalixcorp/k8scicd"
